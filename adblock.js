@@ -10,37 +10,17 @@
 
 (function() {
 
-		//获取当前域名
-		var domain = document.domain;
-
-		//baidu
-		var baiduad=document.getElementById('content_right');
-		var su=document.getElementById("su");
-
-	    //csdn
-	    var csdnad=document.getElementById('asideProfile');
-	    if(domain=="www.baidu.com"){
-	    	if(baiduad!=null){
-	    		baiduad.parentNode.removeChild(baiduad);
-	    	}
-	    	
-	    	su.onclick=function(){
-	    		setInterval(function(){
-	    			if(baiduad!=null){
-			    		baiduad.parentNode.removeChild(baiduad);
-			    	}
-	    		},500);
-	    		
-	    	}
+	    //baidu
+	    if(document.domain=="www.baidu.com"){
+	    	var baiduad=document.getElementById('content_right');
+	    	baiduad.parentNode.removeChild(baiduad);
 	    }
 
-		
-
-		if(csdnad!=null){
-			var aside=csdnad.parentNode;
-			aside.parentNode.removeChild(aside);
-
-		}
+	    //csdn
+	    if(document.domain="www.csdn.net"){
+	    	var csdnad=document.getElementById('asideProfile');
+	    	csdnad.parentNode.removeChild(csdnad);
+	    }
 
 
 })();
