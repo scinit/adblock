@@ -10,7 +10,7 @@
 
 (function() {
 
-	    //baiduhehe
+	    //baiduhehaaa
 	    if(document.domain=="www.baidu.com"){
 	    	var baiduad=document.getElementById('content_right');
 	    	baiduad.parentNode.removeChild(baiduad);
