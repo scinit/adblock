@@ -10,21 +10,37 @@
 
 (function() {
 
-   //百度
-	var baiduad=document.getElementById('content_right');
+		//获取当前域名
+		var domain = document.domain;
 
-    //csdn
-    var csdnad=document.getElementById('asideProfile');
+		//baidu
+		var baiduad=document.getElementById('content_right');
+		var su=document.getElementById("su");
 
-	if(baiduad!=null){
-		baiduad.parentNode.removeChild(baiduad);
-	}
+	    //csdn
+	    var csdnad=document.getElementById('asideProfile');
+	    if(domain=="www.baidu.com"){
+	    	if(baiduad!=null){
+	    		baiduad.parentNode.removeChild(baiduad);
+	    	}
+	    	
+	    	su.onclick=function(){
+	    		setInterval(function(){
+	    			if(baiduad!=null){
+			    		baiduad.parentNode.removeChild(baiduad);
+			    	}
+	    		},500);
+	    		
+	    	}
+	    }
 
-	if(csdnad!=null){
-		var aside=csdnad.parentNode;
-		aside.parentNode.removeChild(aside);
+		
 
-	}
+		if(csdnad!=null){
+			var aside=csdnad.parentNode;
+			aside.parentNode.removeChild(aside);
+
+		}
 
 
 })();
