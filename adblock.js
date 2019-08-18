@@ -17,10 +17,30 @@
 	    }
 
 	    //csdn
-	    if(document.domain="www.csdn.net"){
+	    var re=/csdn.net/;
+	    if(re.test(document.domain)){
+	    	//www.csdn.net
 	    	var csdnad=document.getElementById('asideProfile');
 	    	csdnad.parentNode.removeChild(csdnad);
+
+	    	//blog.csdn.net
+	    	var blogad=document.getElementById("asideFooter").parentNode;
+	    	blogad.parentNode.removeChild(blogad);
+
+	    	//blog.csdn.net...
+	    	var cstoobar=document.getElementsByClassName("csdn-side-toolbar")[0];
+	    	cstoobar.parentNode.removeChild(cstoobar);
+
+	    	//dmp_ad_58
+	    	var middlead=document.getElementById("dmp_ad_58");
+	    	middlead.parentNode.removeChild(middlead);
+
+	    	//tool-box vertical
+	    	var tooboxad=document.getElementsByClassName("tool-box")[0];
+	    	tooboxad.parentNode.removeChild(tooboxad);
 	    }
 
+
+		
 
 })();
