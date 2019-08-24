@@ -10,7 +10,6 @@
 
 (function() {
 
-	//test
 	    //baidu
 	    if(document.domain=="www.baidu.com"){
 	    	var baiduad=document.getElementById('content_right');
