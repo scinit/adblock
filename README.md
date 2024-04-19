@@ -1,2 +1,2 @@
 # adblock
-用最简单的代码实现浏览器广告拦截功能，持续更新中
+Implementing ad-blocking functionality in a browser with the simplest code, continuously updated.
